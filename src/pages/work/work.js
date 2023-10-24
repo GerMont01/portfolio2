@@ -55,12 +55,12 @@ const Work = () => {
                 <Col className='projects'>
                     {selectedProjects.map((project,index)=>(
                         <div className='project' key={index}>
-                            <img alt='online poker' src={project.images[0]}/>
+                            <img alt={project.name} src={project.images[0]}/>
                             <div className='content'>
                                 <h2>{project.name}</h2>
                                 <p>{project.tools}</p>  
                             </div>
-                            <button onClick={()=>navigate(`/work/${project.name}`)}>Learn more</button>
+                            <button onClick={()=>navigate(`portfolio2/work/${project.name}`)}>Learn more</button>
                         </div>
                     ))}
                 </Col>
