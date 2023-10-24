@@ -8,7 +8,12 @@ const Header = () => {
     const [ currentPage, setCurrentPage ] = useState();
 
     useEffect(()=>{
-        if (location.pathname) setCurrentPage(location.pathname)
+        if (location.pathname) {
+            if (location.pathname === "/portfolio2") setCurrentPage("/portfolio2/")
+            else setCurrentPage(location.pathname)
+        } else {
+            setCurrentPage("/portfolio2/")
+        }
     },[location.pathname])
 
     //Add class "selected" to A element when current page is set and remove for the rest
@@ -19,16 +24,16 @@ const Header = () => {
             for (let i=0;i<links.length;i++){
                 links[i].classList.remove("selected")
             }
-            document.getElementById(currentPage).classList.add("selected");
+            document.getElementById(currentPage)?.classList.add("selected");
         }
     },[currentPage])
 
     return (
         <div className='header'>
             <nav>
-                <Link id="/" to="/" >Home</Link>
-                <Link id="/about" to="about" >About</Link>
-                <Link id="/work" to="work" >Work</Link>
+                <Link id="/portfolio2/" to="/portfolio2" >Home</Link>
+                <Link id="/portfolio2/about" to="portfolio2/about" >About</Link>
+                <Link id="/portfolio2/work" to="portfolio2/work" >Work</Link>
                 <a href='mailto:gerardomontme@gmail.com'>Contact</a>
             </nav>
         </div>

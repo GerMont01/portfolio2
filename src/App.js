@@ -2,7 +2,8 @@ import './App.scss';
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  Navigate
 } from "react-router-dom";
 import Home from './pages/home/home';
 import Work from './pages/work/work';
@@ -17,10 +18,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/work/:name" element={<Project />} />
+          <Route path="/portfolio2" element={<Home />} />
+          <Route path="/portfolio2/about" element={<About />} />
+          <Route path="/portfolio2/work" element={<Work />} />
+          <Route path="/portfolio2/work/:name" element={<Project />} />
+          <Route path='*' element={<Navigate to='/portfolio2' />} />
         </Routes>
       </BrowserRouter>
       <Footer />

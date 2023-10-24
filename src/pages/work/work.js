@@ -60,7 +60,7 @@ const Work = () => {
                                 <h2>{project.name}</h2>
                                 <p>{project.tools}</p>  
                             </div>
-                            <button onClick={()=>navigate(`/work/${project.name}`)}>Learn more</button>
+                            <button onClick={()=>navigate(`/portfolio2/work/${project.name}`)}>Learn more</button>
                         </div>
                     ))}
                 </Col>

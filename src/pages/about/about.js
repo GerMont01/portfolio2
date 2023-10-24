@@ -26,7 +26,6 @@ const About = () => {
         ];
         window.onresize = () => {
             setWindowHeight(window.innerHeight);
-            console.log(window.innerHeight)
         }
         if (elements) checkPosition(elements);
         if (skills) checkPosition2(skills);
