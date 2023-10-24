@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio2/static/css/main.2b6a12dc.css",
+    "main.js": "/portfolio2/static/js/main.a847c621.js",
+    "static/media/about2.jpg": "/portfolio2/static/media/about2.fc9666fa84f539074ebb.jpg",
+    "static/media/online-poker3.png": "/portfolio2/static/media/online-poker3.3d1496e4e71e33c452cd.png",
+    "static/media/about1.jpg": "/portfolio2/static/media/about1.b26f2a4ee67801db977d.jpg",
+    "static/media/online-poker2.png": "/portfolio2/static/media/online-poker2.d7e4ede4c27db83699cc.png",
+    "static/media/cinemont3.png": "/portfolio2/static/media/cinemont3.4d7e410d4a7324b127b0.png",
+    "static/media/online-poker.png": "/portfolio2/static/media/online-poker.418ca8e1056f6ea3fd79.png",
+    "static/media/crewbite1.jpg": "/portfolio2/static/media/crewbite1.ecbd3a095b5cfe6b3eb4.jpg",
+    "static/media/pocket-city3.png": "/portfolio2/static/media/pocket-city3.db342b15cc19cf9aca2e.png",
+    "static/media/pocket-city.png": "/portfolio2/static/media/pocket-city.75a9ba8abcef72c74111.png",
+    "static/media/me2.jpg": "/portfolio2/static/media/me2.09c9b0a7fad49ac3212b.jpg",
+    "static/media/pocket-city2.png": "/portfolio2/static/media/pocket-city2.963d1c261025be3e29fe.png",
+    "static/media/cinemont4.png": "/portfolio2/static/media/cinemont4.9d4a51490fbc8101e4d7.png",
+    "static/media/cinemont2.png": "/portfolio2/static/media/cinemont2.072f0a3ff51de1bbd3eb.png",
+    "static/media/C-Logo.jpg": "/portfolio2/static/media/C-Logo.3deb49fd241581cab750.jpg",
+    "static/media/crewbite2.jpg": "/portfolio2/static/media/crewbite2.7a6edaec98160e5ee7fe.jpg",
+    "static/media/crewbite3.jpg": "/portfolio2/static/media/crewbite3.f5378fae6598097f88b1.jpg",
+    "static/media/linlitalk.png": "/portfolio2/static/media/linlitalk.15ef602bedf79d1827b8.png",
+    "static/media/linlitalk3.png": "/portfolio2/static/media/linlitalk3.0144de8f05d62858b64f.png",
+    "static/media/dashboard2.png": "/portfolio2/static/media/dashboard2.ecd89c7636353855ffc8.png",
+    "static/media/linlitalk2.png": "/portfolio2/static/media/linlitalk2.d539d4bf74b11199e7be.png",
+    "static/media/udlap.png": "/portfolio2/static/media/udlap.adcb4c4b0cce5b8f5e06.png",
+    "static/media/cinemont.png": "/portfolio2/static/media/cinemont.859088d3d7b1477cf9f8.png",
+    "static/media/udec.png": "/portfolio2/static/media/udec.4260c7e020971b8bf0d8.png",
+    "static/media/dashboard.png": "/portfolio2/static/media/dashboard.de710bb15f7359a1742c.png",
+    "static/media/verilog.svg": "/portfolio2/static/media/verilog.4ba7819c43952850a5943301bd4a90dd.svg",
+    "index.html": "/portfolio2/index.html",
+    "main.2b6a12dc.css.map": "/portfolio2/static/css/main.2b6a12dc.css.map",
+    "main.a847c621.js.map": "/portfolio2/static/js/main.a847c621.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b6a12dc.css",
+    "static/js/main.a847c621.js"
+  ]
+}
