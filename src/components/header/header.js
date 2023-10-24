@@ -26,9 +26,9 @@ const Header = () => {
     return (
         <div className='header'>
             <nav>
-                <Link id="/portfolio2" to="portfolio2" >Home</Link>
-                <Link id="/portfolio2/about" to="portfolio2/about" >About</Link>
-                <Link id="/portfolio2/work" to="portfolio2/work" >Work</Link>
+                <Link id="/" to="/" >Home</Link>
+                <Link id="/about" to="about" >About</Link>
+                <Link id="/work" to="work" >Work</Link>
                 <a href='mailto:gerardomontme@gmail.com'>Contact</a>
             </nav>
         </div>

@@ -17,10 +17,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/portfolio2" element={<Home />} />
-          <Route path="/portfolio2/about" element={<About />} />
-          <Route path="/portfolio2/work" element={<Work />} />
-          <Route path="/portfolio2/work/:name" element={<Project />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/:name" element={<Project />} />
         </Routes>
       </BrowserRouter>
       <Footer />
