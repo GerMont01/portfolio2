@@ -8,7 +8,7 @@ const Header = () => {
     const [ currentPage, setCurrentPage ] = useState();
 
     useEffect(()=>{
-        setCurrentPage(location.pathname)
+        if (location.pathname) setCurrentPage(location.pathname)
     },[location.pathname])
 
     //Add class "selected" to A element when current page is set and remove for the rest
