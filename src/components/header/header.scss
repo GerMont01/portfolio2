@@ -1,0 +1,53 @@
+@import "../../colors.scss";
+
+@media (orientation: landscape) and (max-height: 400px) {
+    .header{
+        padding: 1% !important;
+    }
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    padding-top: 4%;
+    z-index: 100;
+    nav {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size: 17px;
+            position: relative;
+            padding: 10px;
+            text-decoration: none;
+            color: $primaryColor;
+            width: 80px;
+            text-align: center;
+            &::after{
+                content:" ";
+                width: 0;
+                height: 0;
+                border: 5px solid transparent;
+                border-radius: 50%;
+                position:absolute;
+                top: 40px;
+                right: 34px;
+                transition: 0.3s;
+            }
+            &:hover:after {
+                border: 5px solid $primaryColor;
+                background-color: $primaryColor;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.selected {
+    color: $secondaryColor !important;
+    &::after{
+        border: 5px solid $secondaryColor;
+        background-color: $secondaryColor;
+    }
+}

@@ -1,0 +1,189 @@
+@import '../../colors.scss';
+
+@media (orientation: portrait) and (max-width: 768px) {
+    #aboutContainer {
+        padding-top: 8vh !important;
+        .skillsCol {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            .skills {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    align-self: flex-start;
+                    margin-left: 10px !important;
+                }
+                .iconscontainer {
+                    justify-content: center;
+                }
+                .aboutimg {
+                    padding-right: 0 !important;
+                }
+            }
+        }
+        .timelineCol {
+            h1 {
+                margin-right: 10px !important;
+            }
+        }
+    }
+
+}
+
+@media (orientation: landscape) and (max-height: 400px) {
+    .timelineCol {
+        padding-bottom: 70px !important;
+    }
+}
+
+#aboutContainer{
+    padding-top: 22vh;
+    padding-bottom: 5vh;
+    color: $primaryColor;
+    #aboutRow {
+        .skillsCol {
+            margin: 0;
+            padding: 0;
+            .skills {
+                width: 100%;
+                height: inherit;
+                h1 {
+                    padding: 3vh 0;
+                    font-size: 25px;
+                    margin: 0;
+                    opacity: 0;
+                    transition: 2s;
+                    &:first-of-type {
+                        padding-top: 5vh;
+                    }
+                }
+                hr {
+                    margin: 0;
+                    color: $secondaryColor;
+                    width: 80%;
+                    height: 1px;
+                }
+                .iconscontainer {
+                    padding-top: 2vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: inherit;
+                    opacity: 0;
+                    transition: 2s;
+                    .skill {
+                       position: relative;
+                       text-align: center;
+                       width: 80px;
+                       margin: 5px;
+                       .skillicon {
+                            height: 30px;
+                            width: 30px;
+                            margin: 5px;
+                            
+                        } 
+                        p {
+                            font-size: 12px;
+                        }
+                    } 
+                }
+                .embedded, .interests {
+                    opacity: 0;
+                    transition: 2s;
+                    padding-left: 5px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 10px;
+                        list-style: none;
+                        span {
+                            margin-right: 4px;
+                        }
+                        .interesticon {
+                            margin: 0 10px;
+                            height: 30px;
+                            width: 30px;
+                        }
+                        .embeddedicon1 {
+                            padding: 4px;
+                        }
+                        .embeddedicon {
+                            color: black;
+                            filter: invert(100%) sepia(81%) saturate(0%) hue-rotate(132deg) brightness(104%) contrast(101%);
+                            margin: 0 10px;
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                }
+                .aboutimg {
+                    opacity: 0;
+                    transition: 2s;
+                    width: 100%;
+                    padding-top: 30px;
+                    padding-right: 20px;
+                }
+            }
+        }
+        .sliders{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding-top: 20vh;
+            height: 100%;
+            .slider1 {
+                position: sticky;
+                top: 47vh;
+                height: 53vh;
+                z-index: 2;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: -4px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 150%;
+                    background-color: $secondaryColor;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    height: 53vh;
+                    width: 2px;
+                    background-image: linear-gradient($secondaryColor, $bgColor);
+                }
+            }
+            .slider2 {
+                background-image: linear-gradient($bgColor, $secondaryColor);
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                height: 50vh;
+                width: 2px;
+                z-index: 1;
+            }
+        }  
+        .timelineCol {
+            padding-bottom: 37vh;
+            h1 {
+                text-align: end;
+                font-size: 25px;
+                padding-top: 5vh;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.showexperience {
+    transform: scale(1.05);
+    opacity: 1 !important;
+}
+.fadein {
+    opacity: 1 !important;
+}

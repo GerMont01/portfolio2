@@ -1,0 +1,153 @@
+@import "../../colors.scss";
+
+@media (orientation: portrait) and (max-width: 600px) {
+    #homeContainer {
+        padding-top: 13vh !important;
+        #meRow{
+            #meCol {
+                p {
+                    width: 90% !important;
+                    padding-top: 5% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #introCol1::after{
+        top: 100% !important;
+        left: 10% !important;
+        height: 1px !important;
+        width: 80% !important;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 400px) {
+    #homeContainer {
+        padding-top: 12vh !important;
+    }
+}
+
+#homeContainer{
+    // height: 100vh;
+    width: 100%;
+    color: $primaryColor;
+    position: relative;
+    padding-top: 17vh;
+    #meRow{
+        height: 100%;
+        #meCol {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            img{
+                margin: 3%;
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                filter: brightness(1.2);
+            }
+            p {
+                font-size: 20px;
+                text-align: center;
+                width: 60%;
+                span {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    } 
+    #socialMediaRow {
+        #socialMediaCol {
+            margin: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            a {
+                svg {
+                    height: 35px !important;
+                    width: 35px !important;
+                    margin: 5px;
+                    color: $primaryColor;
+                    &:hover {
+                        cursor: pointer;
+                        color: $secondaryColor !important;
+                    }
+                }
+            }
+            
+        } 
+    }
+    #introRow {
+        padding: 5% 0;
+        #introCol1, #introCol2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 3s;
+            padding: 5%;
+            h1 {
+                width: 100%;
+                margin: 5%;
+                color: $secondaryColor;
+                font-size: 25px;
+            }
+            p {
+                text-align: justify;
+                font-size: 18px;
+            }
+        }
+        #introCol1 {
+            position: relative;
+            h1 {
+                text-align: end;
+            }
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 9vh;
+                right: 0;
+                height: 70%;
+                width: 1px;
+                background-color: $secondaryColor;
+            }
+        }
+    }
+}
+
+#arrowDown {
+    
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1vh;
+    height: 60px;
+    width: 100%;
+    color: $primaryColor;
+    -webkit-animation: colorChange 2s infinite;
+    animation: 2s infinite colorChange;
+    transition: 0.5s;
+}
+
+@keyframes colorChange {
+    0% {
+    color: $secondaryColor;
+    }
+    
+    100% {
+    color: $primaryColor;
+    }
+}
+@-webkit-keyframes colorChange {
+    0% {
+    color: $secondaryColor;
+    }
+    
+    100% {
+    color: $primaryColor;
+    }
+}

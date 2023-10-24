@@ -1,0 +1,58 @@
+@import '../../colors.scss';
+
+@media (orientation: portrait) and (max-width: 600px) {
+    #projectContainer {
+        padding-top: 13vh !important;
+        #col1, #col2 {
+          padding-bottom: 10% !important;  
+        }
+    }
+}
+#projectContainer{
+    padding-top: 20vh;
+    color: $primaryColor;
+    #col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10%;
+        .nameandtools {
+            display: flex;
+            flex-direction: column;
+            p {
+                color: $secondaryColor;
+                margin-top: 8px;
+            }
+        }
+        span {
+            color: $secondaryColor;
+        }
+        a {
+            text-decoration: none;
+            color: $primaryColor;
+            margin-right: 20px;
+            padding: 5px;
+            border: 2px solid $primaryColor;
+            border-radius: 5px;
+            white-space: nowrap;
+            &:hover {
+                border-color: $secondaryColor;
+                color: $secondaryColor;
+            }
+        }
+    }
+    #col2 {
+        display: flex;
+        justify-content: center;
+        height: 610px;
+        #imagescarousel{
+            width: 760px;
+            height: fit-content;
+                img {
+                    width: inherit;
+                    max-height: 550px;
+                }
+            
+        }
+    }
+}

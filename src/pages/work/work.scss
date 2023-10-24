@@ -1,0 +1,100 @@
+@import "../../colors.scss";
+
+@media (orientation: portrait) and (max-width: 600px) {
+    #work-container {
+        padding-top: 13vh !important;
+        .projects{
+            .project {
+                height: 400px !important;
+            }
+        }
+    }
+}
+    
+
+#work-container {
+    padding-top: 22vh;
+    padding-bottom: 10vh;
+    color: $primaryColor;
+    span {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        .project {
+            position: relative;
+            width: 550px;
+            min-width: 300px;
+            height: 540px;
+            margin: 8px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primaryColor;
+            filter: brightness(1.1);
+            transition: 0.4s;
+            .content {
+                position: absolute;
+                top: -80px;
+                opacity: 0;
+                transition: 0.5s;
+                text-align: center;
+                p {
+                    color: $secondaryColor;
+                }
+            }
+            button {
+                color: $primaryColor;
+                position: absolute;
+                bottom: 30%;
+                padding: 15px 30px;
+                border-radius: 10px;
+                border: 2px solid $primaryColor;
+                background-color: transparent;
+                opacity: 0;
+                transition: 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    border-color: $secondaryColor;
+                    color: $secondaryColor;
+                }
+            }
+            img {
+                height: 100%;
+            } 
+            &:hover {
+                img {
+                    transition: 1s;
+                    transform: scale(1.05);
+                    filter: brightness(0.1);
+                }
+                .content {
+                    top: 35%;
+                    opacity: 1;
+                }
+                button {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    span {
+        &:hover {
+            color: $secondaryColor;
+            cursor: pointer;
+        }
+    }
+}
+.work-selected {
+    color: $secondaryColor;
+}
