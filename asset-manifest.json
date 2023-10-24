@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio2/static/css/main.2b6a12dc.css",
-    "main.js": "/portfolio2/static/js/main.b5bf7eca.js",
+    "main.js": "/portfolio2/static/js/main.4357e825.js",
     "static/media/about2.jpg": "/portfolio2/static/media/about2.fc9666fa84f539074ebb.jpg",
     "static/media/online-poker3.png": "/portfolio2/static/media/online-poker3.3d1496e4e71e33c452cd.png",
     "static/media/about1.jpg": "/portfolio2/static/media/about1.b26f2a4ee67801db977d.jpg",
@@ -29,10 +29,10 @@
     "static/media/verilog.svg": "/portfolio2/static/media/verilog.4ba7819c43952850a5943301bd4a90dd.svg",
     "index.html": "/portfolio2/index.html",
     "main.2b6a12dc.css.map": "/portfolio2/static/css/main.2b6a12dc.css.map",
-    "main.b5bf7eca.js.map": "/portfolio2/static/js/main.b5bf7eca.js.map"
+    "main.4357e825.js.map": "/portfolio2/static/js/main.4357e825.js.map"
   },
   "entrypoints": [
     "static/css/main.2b6a12dc.css",
-    "static/js/main.b5bf7eca.js"
+    "static/js/main.4357e825.js"
   ]
 }
