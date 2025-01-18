@@ -1,5 +1,19 @@
 export const projects = [
     {
+        name:"Super Mobile",
+        type: ["ui/ux","frontend","backend"],
+        tools: "NextJS, Tailwind",
+        description: "Super Mobile is an e-commerce website selling mobile phones and smart watches built with NextJs. The main feature is a dynamic filter system that allows combining multiple filters (e.g., brand, price, OS), automatically adjusting filter options to ensure relevant results and avoid 'no match' outcomes.",
+        role: "This Project was fully developed by me",
+        images: [
+            require("../images/supermobile1.jpg"),
+            require("../images/supermobile2.jpg"),
+            require("../images/supermobile3.jpg")
+        ],
+        github:"https://github.com/GerMont01/practice_next",
+        demo: "https://super-mobile.vercel.app/"
+    },
+    {
         name:"Crewbite",
         type: ["frontend"],
         tools: "ReactJS, SCSS, Bootstrap, Material UI, AWS Amplify",

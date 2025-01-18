@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Experience from './experience/experience';
 import './about.scss';
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiExpress, SiSass, SiMongodb, SiTypescript, SiC, SiArduino, SiRedux } from 'react-icons/si';
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiExpress, SiSass, SiTypescript, SiC, SiArduino, SiRedux } from 'react-icons/si';
 import { FaGitAlt, FaAws } from 'react-icons/fa';
+import { TbBrandNextjs } from "react-icons/tb";
 import { MdVideogameAsset, MdOutlineAirplanemodeActive, MdFitnessCenter } from 'react-icons/md';
 import verilog from '../../images/verilog.svg';
 
@@ -70,10 +71,10 @@ const About = () => {
                             <div className='skill'><SiJavascript className='skillicon'/><p>Javascript</p></div>
                             <div className='skill'><SiTypescript className='skillicon' /><p>Typescript</p></div>
                             <div className='skill'><SiReact className='skillicon'/><p>React JS</p></div>
+                            <div className='skill'><TbBrandNextjs className='skillicon'/><p>Next Js</p></div> 
                             <div className='skill'><SiRedux className='skillicon'/><p>Redux</p></div>
                             <div className='skill'><SiNodedotjs className='skillicon'/><p>Node JS</p></div>
                             <div className='skill'><SiExpress className='skillicon'/><p>Express JS</p></div>
-                            <div className='skill'><SiMongodb className='skillicon'/><p>MongoDB</p></div> 
                             <div className='skill'><FaGitAlt className='skillicon'/><p>Git</p></div>
                             <div className='skill'><FaAws className='skillicon'/><p>Aws</p></div>
                         </div>

@@ -3,7 +3,7 @@ export const cv = [
         image: require('../images/C-Logo.jpg'),
         title:'Frontend Developer',
         company:'Crewbite',
-        date:'May 2022 - Present',
+        date:'May 2022 - July 2023',
         location: 'Vancouver, British Columbia, Canada',
         description: 'In charge of all frontend development for Crewbite, a production crew recruitment, application, built using React.js, aws amplify, MUI, Bootstrap and SCSS'
     },
